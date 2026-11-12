@@ -1,0 +1,44 @@
+Marine Loadout
+
+# Marine Loadout
+# > self do "vvwrite /entity/$ID/Name \"Brigadier Orson C. Ashcroft.'\""
+
+# Comps 
+> marked comp:ensure Mindshield
+> marked comp:ensure AntagImmune
+> marked comp:ensure Implanted
+> marked comp:ensure NoObjectiveTarget
+> marked comp:rm PreventEorg
+
+# Implants
+> marked spawn:in "implant" "MindShieldImplant"
+> marked spawn:in "implant" "DeathRattleImplantCentcomm"
+> marked spawn:in "implant" "RadioImplantCentcomm"
+> marked spawn:in "implant" "GearAcidifierImplanter"
+> marked role:rmsetjob NTNCBlueShield
+
+# Clothing
+> marked spawn:in "jumpsuit" ClothingUniformNTNCFatigues
+> marked spawn:in "outerClothing" ClothingOuterHardsuitNTNCConsortiumMedic
+# > marked spawn:in "neck" ClothingNeckMantleDecoratedMarineMajor
+> marked spawn:in "head" ClothingHeadHatBeretBlueShield
+> marked spawn:in "shoes" ClothingShoesBootsCombatFilled
+> marked spawn:in "eyes" ClothingEyesGlassesNTNC
+> marked spawn:in "ears" ClothingHeadsetAltNTNC
+> marked spawn:in "gloves" ClothingHandsGlovesCombat
+> marked spawn:in "mask" "ClothingMaskGasBSO"
+> marked spawn:in "id" NTNCCSPDA
+> marked do "vvwrite /entity/$ID/ContainerContainer/Containers[id]/ContainedEntity/Pda/ContainedId/IdCard/_jobTitle \"NT Marine Commandos | 27th Commando Group | Whiskey Company, Delta Troop\""
+# > marked do "vvwrite /entity/$ID/ContainerContainer/Containers[id]/ContainedEntity/Pda/ContainedId/IdCard/FullName \"Brigadier Orson C. Ashcroft\""
+
+# Weapons
+> marked spawn:in "belt" ClothingBeltNTNCRig do "ent $ID spawn:in \"storagebase\" WeaponPistolN1984" do "ent $ID spawn:in \"storagebase\" MagazineMagnum" do "ent $ID spawn:in \"storagebase\" MagazineMagnum" do "ent $ID spawn:in \"storagebase\" MagazineRifleM52FMJ" do "ent $ID spawn:in \"storagebase\" MagazineRifleM52FMJ" do "ent $ID spawn:in \"storagebase\" MagazineRifleM52FMJ" do "ent $ID spawn:in \"storagebase\" MagazineRifleM52FMJ" do "ent $ID spawn:in \"storagebase\" MagazineRifleM52AP" do "ent $ID spawn:in \"storagebase\" MagazineRifleM52AP" do "ent $ID spawn:in \"storagebase\" GrenadeShrapnel"
+> marked spawn:in "suitstorage" WeaponRifleM52
+
+# Bag 
+> marked spawn:in "back" ClothingBackpackNTNC do "ent $ID spawn:in \"storagebase\" TSFZiptiePack" do "ent $ID spawn:in \"storagebase\" TSFBatonModel5" do "ent $ID spawn:in \"storagebase\" Hypospray" do "ent $ID spawn:in \"storagebase\" JugPunctTranex" do "ent $ID spawn:in \"storagebase\" JugDexPlusSaline" do "ent $ID spawn:in \"storagebase\" JugPyraDerma" do "ent $ID spawn:in \"storagebase\" ChemistryBottleOmnizine" do "ent $ID spawn:in \"storagebase\" ChemistryBottleOmnizine" do "ent $ID spawn:in \"storagebase\" DefibrillatorCompact" do "ent $ID spawn:in \"storagebase\" PowerCellMicroreactor" do "ent $ID spawn:in \"storagebase\" PowerCellMicroreactor" do "ent $ID spawn:in \"storagebase\" FreedomImplanter	" 
+
+#IFAK
+> marked spawn:in "pocket1" SecurityMedkit do "vvwrite /entity/$ID/Name \"Individual First Aid Kit\"" do "ent $ID spawn:in \"storagebase\" CombatMedipen" do "ent $ID spawn:in \"storagebase\" CombatMedipen" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" MedicatedSuture" do "ent $ID spawn:in \"storagebase\" MedicatedSuture" do "ent $ID spawn:in \"storagebase\" RegenerativeMesh" do "ent $ID spawn:in \"storagebase\" RegenerativeMesh"
+
+> marked spawn:in "pocket2" SecurityMedkit do "vvwrite /entity/$ID/Name \"Multi First Aid Kit\"" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" MedicatedSuture" do "ent $ID spawn:in \"storagebase\" MedicatedSuture" do "ent $ID spawn:in \"storagebase\" RegenerativeMesh" do "ent $ID spawn:in \"storagebase\" RegenerativeMesh"

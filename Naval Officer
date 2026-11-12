@@ -1,0 +1,38 @@
+Naval Officer
+
+# Comps 
+> marked comp:ensure Mindshield
+> marked comp:ensure AntagImmune
+> marked comp:ensure Implanted
+> marked comp:ensure NoObjectiveTarget
+> marked comp:rm PreventEorg
+
+# Implants
+> marked spawn:in "implant" "MindShieldImplant"
+> marked spawn:in "implant" "DeathRattleImplantCentcomm"
+> marked spawn:in "implant" "RadioImplantCentcomm"
+> marked spawn:in "implant" "GearAcidifierImplanter"
+> marked role:rmsetjob NTNCBlueShield
+
+# Clothing
+> marked spawn:in "jumpsuit" ClothingUniformJumpsuitNTNCOfficer
+> marked spawn:in "outerClothing" ClothingOuterVestWebNTNCEnsign
+# > marked spawn:in "neck" ClothingNeckMantleDecoratedMarineMajor
+> marked spawn:in "head" ClothingHeadHatNTNCGrey
+> marked spawn:in "shoes" ClothingShoesBootsCombatFilled
+> marked spawn:in "eyes" ClothingEyesGlassesNTNC
+> marked spawn:in "ears" ClothingHeadsetAltNTNC
+> marked spawn:in "gloves" ClothingHandsGlovesCombat
+# > marked spawn:in "mask" "ClothingMaskGasBSO"
+> marked spawn:in "id" NTNCCSPDA
+> marked do "vvwrite /entity/$ID/ContainerContainer/Containers[id]/ContainedEntity/Pda/ContainedId/IdCard/_jobTitle \"NT Naval Staff | 2nd Naval Task Force\""	
+
+# Belt + Pocket
+> marked spawn:in "belt" ClothingBeltRetroOfficer do "ent $ID spawn:in \"storagebase\" WeaponPistolN1984" do "ent $ID spawn:in \"storagebase\" MagazineMagnumAP" do "ent $ID spawn:in \"storagebase\" MagazineMagnumAP" do "ent $ID spawn:in \"storagebase\" MagazineMagnumAP" do "ent $ID spawn:in \"storagebase\" MagazineMagnumAP"
+> marked spawn:in "pocket2" FreedomImplanter
+
+# Bag 
+> marked spawn:in "back" ClothingBackpackNTNC do "ent $ID spawn:in \"storagebase\" OxygenTankFilled" do "ent $ID spawn:in \"storagebase\" ClothingMaskGasBSO"
+
+#IFAK
+> marked spawn:in "pocket1" SecurityMedkit do "vvwrite /entity/$ID/Name \"Individual First Aid Kit\"" do "ent $ID spawn:in \"storagebase\" CombatMedipen" do "ent $ID spawn:in \"storagebase\" CombatMedipen" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" AirlossAutoInjector" do "ent $ID spawn:in \"storagebase\" MedicatedSuture" do "ent $ID spawn:in \"storagebase\" MedicatedSuture" do "ent $ID spawn:in \"storagebase\" RegenerativeMesh" do "ent $ID spawn:in \"storagebase\" RegenerativeMesh"
